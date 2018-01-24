@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Distance Calculator</title>
+        <link rel="stylesheet" href="css/bootstrap.css">
+        <link rel="stylesheet" href="css/style.css">
+    </head>
+    <body>
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <input id="source" type="text" class="form-control" placeholder="From...">
+                        <div class="display">
+                            <ul class = "list-group list-group-hover" id="displaySource"> 
+                            </ul>
+                        </div>
+                </div>
+                <div class="col">
+                    <input id="destination" type="text" class="form-control" placeholder="To...">
+                    <div class="display">
+                            <ul class = "list-group list-group-hover" id="displayDestination"> 
+                            </ul>
+                        </div>
+                </div> 
+                <div>
+                    <button id="calculate" class="btn btn-secondary">Find Distance!</button>
+                </div>      
+            </div>
+            <div class="row">
+                <div class="col">
+                    <p>Distance: <span id="distanceValue"></span></p>
+                </div>
+                
+            </div>
+                <div id="map">    
+                </div> 
+        </div>
+        <script src="/js/index.js"></script>
+        <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDJXz8Rjf2QSXVUrA5XFvFgyrD3NT0XDxA"></script>
+    </body>
+</html>
